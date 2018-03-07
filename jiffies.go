@@ -9,6 +9,7 @@ int getJiffies() {
 */
 import "C"
 
+// GetJiffies get jiffies of current version kernel
 func GetJiffies() int {
 	return int(C.getJiffies())
 }
